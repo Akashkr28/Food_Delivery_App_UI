@@ -204,12 +204,23 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: 24
   },
+  heroAddressRow: {
+    alignItems: 'flex-start',
+    flexDirection: 'row',
+    gap: 12,
+    justifyContent: 'space-between'
+  },
+  heroAddressText: {
+    flex: 1,
+    minWidth: 0
+  },
   heroIcon: {
     alignItems: 'center',
     backgroundColor: 'rgba(255,255,255,0.18)',
     borderRadius: 8,
     height: 48,
     justifyContent: 'center',
+    marginTop: 4,
     width: 48
   },
   heroKicker: {
@@ -228,8 +239,10 @@ export const styles = StyleSheet.create({
   },
   heroTitle: {
     color: colors.white,
-    fontSize: 26,
-    fontWeight: '900'
+    flexShrink: 1,
+    fontSize: 22,
+    fontWeight: '900',
+    lineHeight: 28
   },
   homeHero: {
     backgroundColor: colors.dark,

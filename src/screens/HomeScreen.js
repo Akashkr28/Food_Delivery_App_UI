@@ -14,8 +14,8 @@ export function HomeScreen({ navigation }) {
   return (
     <Screen>
       <View style={styles.homeHero}>
-        <View style={styles.rowBetween}>
-          <View>
+        <View style={styles.heroAddressRow}>
+          <View style={styles.heroAddressText}>
             <Text style={styles.heroKicker}>Deliver to</Text>
             <Text style={styles.heroTitle}>{user.address}</Text>
           </View>

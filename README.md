@@ -4,10 +4,9 @@ A React Native Expo food delivery UI built to practice React Navigation patterns
 
 TLDraw notes reviewed: [Mobile Development Cohort 2026 board](https://www.tldraw.com/f/mQeviE3IZLi8quAUEoGja?d=v-1305.24961.1834.1128.page)
 
-## Submission Links
+## Links
 
-- Public GitHub repository: Add your GitHub repo link here.
-- 2-minute demo video: Add your demo video link here.
+- 2-minute demo video: https://youtube.com/shorts/75MnGyCsZYQ
 
 ## Tech Stack
 
