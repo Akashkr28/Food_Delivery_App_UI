@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Food Delivery Navigation",
+    "slug": "food-delivery-navigation",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "foodapp",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.assignment.fooddeliverynavigation"
+    },
+    "android": {
+      "package": "com.assignment.fooddeliverynavigation"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
