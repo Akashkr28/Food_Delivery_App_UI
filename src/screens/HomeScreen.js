@@ -3,18 +3,21 @@ import { Pressable, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 import { Screen } from '../components/Screen';
+import { useUser } from '../context/UserContext';
 import { restaurants } from '../data/restaurants';
 import { styles } from '../styles/sharedStyles';
 import { colors } from '../theme/colors';
 
 export function HomeScreen({ navigation }) {
+  const { user } = useUser();
+
   return (
     <Screen>
       <View style={styles.homeHero}>
         <View style={styles.rowBetween}>
           <View>
             <Text style={styles.heroKicker}>Deliver to</Text>
-            <Text style={styles.heroTitle}>Bengaluru, India</Text>
+            <Text style={styles.heroTitle}>{user.address}</Text>
           </View>
           <View style={styles.heroIcon}>
             <Ionicons name="location" size={24} color={colors.white} />

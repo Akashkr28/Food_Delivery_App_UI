@@ -5,6 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import { AuthProvider, useAuthState } from './src/context/AuthContext';
 import { CartProvider } from './src/context/CartContext';
 import { OrderProvider } from './src/context/OrderContext';
+import { UserProvider } from './src/context/UserContext';
 import { linking } from './src/navigation/linking';
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { LoadingScreen } from './src/screens/LoadingScreen';
@@ -27,11 +28,13 @@ function AppContent() {
 export default function App() {
   return (
     <AuthProvider>
-      <OrderProvider>
-        <CartProvider>
-          <AppContent />
-        </CartProvider>
-      </OrderProvider>
+      <UserProvider>
+        <OrderProvider>
+          <CartProvider>
+            <AppContent />
+          </CartProvider>
+        </OrderProvider>
+      </UserProvider>
     </AuthProvider>
   );
 }

@@ -2,7 +2,9 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import { CustomDrawerContent } from '../components/CustomDrawerContent';
-import { DrawerPlaceholderScreen } from '../screens/DrawerPlaceholderScreen';
+import { HelpScreen } from '../screens/HelpScreen';
+import { MyOrdersScreen } from '../screens/MyOrdersScreen';
+import { SettingsScreen } from '../screens/SettingsScreen';
 import { MainTabsNavigator } from './MainTabsNavigator';
 import { colors } from '../theme/colors';
 
@@ -14,16 +16,18 @@ export function MainDrawerNavigator() {
       id="MainDrawer"
       drawerContent={(props) => <CustomDrawerContent {...props} />}
       screenOptions={{
-        headerShown: false,
+        headerShown: true,
+        headerStyle: { backgroundColor: colors.primary },
+        headerTintColor: colors.white,
         drawerActiveTintColor: colors.primary,
         drawerInactiveTintColor: colors.dark,
         drawerLabelStyle: { fontWeight: '700' }
       }}
     >
-      <Drawer.Screen name="HomeTabs" component={MainTabsNavigator} options={{ title: 'Home' }} />
-      <Drawer.Screen name="My Orders" component={DrawerPlaceholderScreen} />
-      <Drawer.Screen name="Settings" component={DrawerPlaceholderScreen} />
-      <Drawer.Screen name="Help" component={DrawerPlaceholderScreen} />
+      <Drawer.Screen name="HomeTabs" component={MainTabsNavigator} options={{ title: 'Home', headerShown: false }} />
+      <Drawer.Screen name="My Orders" component={MyOrdersScreen} />
+      <Drawer.Screen name="Settings" component={SettingsScreen} />
+      <Drawer.Screen name="Help" component={HelpScreen} />
     </Drawer.Navigator>
   );
 }

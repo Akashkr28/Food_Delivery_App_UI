@@ -160,6 +160,41 @@ export const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 16
   },
+  faqCard: {
+    backgroundColor: colors.white,
+    borderColor: colors.border,
+    borderRadius: 8,
+    borderWidth: 1,
+    gap: 8,
+    marginBottom: 12,
+    padding: 16
+  },
+  formCard: {
+    backgroundColor: colors.white,
+    borderColor: colors.border,
+    borderRadius: 8,
+    borderWidth: 1,
+    marginBottom: 16,
+    padding: 16
+  },
+  helpCard: {
+    alignItems: 'center',
+    backgroundColor: colors.white,
+    borderColor: colors.border,
+    borderRadius: 8,
+    borderWidth: 1,
+    flexDirection: 'row',
+    gap: 12,
+    marginBottom: 10,
+    padding: 14
+  },
+  helpText: {
+    color: colors.dark,
+    flex: 1,
+    fontSize: 15,
+    fontWeight: '700',
+    lineHeight: 22
+  },
   heroCircle: {
     width: 150,
     height: 150,
@@ -216,6 +251,13 @@ export const styles = StyleSheet.create({
   infoText: {
     color: colors.warningDark,
     fontWeight: '800'
+  },
+  inputLabel: {
+    color: colors.dark,
+    fontSize: 14,
+    fontWeight: '800',
+    marginBottom: 8,
+    marginTop: 12
   },
   iconButton: {
     alignItems: 'center',
@@ -313,6 +355,10 @@ export const styles = StyleSheet.create({
   metaText: {
     color: colors.muted,
     fontSize: 14
+  },
+  multilineInput: {
+    minHeight: 82,
+    textAlignVertical: 'top'
   },
   pressed: {
     opacity: 0.72
@@ -422,6 +468,12 @@ export const styles = StyleSheet.create({
     marginTop: 2,
     textAlign: 'right'
   },
+  successText: {
+    color: colors.success,
+    fontSize: 14,
+    fontWeight: '800',
+    marginBottom: 4
+  },
   sectionTitle: {
     color: colors.dark,
     fontSize: 20,
@@ -437,6 +489,17 @@ export const styles = StyleSheet.create({
     height: 64,
     paddingBottom: 8,
     paddingTop: 8
+  },
+  textInput: {
+    backgroundColor: colors.background,
+    borderColor: colors.borderStrong,
+    borderRadius: 8,
+    borderWidth: 1,
+    color: colors.dark,
+    fontSize: 15,
+    minHeight: 48,
+    paddingHorizontal: 12,
+    paddingVertical: 10
   },
   title: {
     color: colors.dark,
